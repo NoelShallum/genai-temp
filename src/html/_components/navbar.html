@@ -85,10 +85,25 @@
 					<li class="nav-item">
 						<a class="nav-link @@if(context.activeLink === 'blog'){active}" href="blog.html">Blog</a>
 					</li>
-					<li class="nav-item ">
-						<a class="nav-link @@if(context.activeLink === 'use-cases-details'){active}" href="use-cases-details.html">How it Works</a>
+					<li class="nav-item dropdown">
+						<a
+							class="nav-link @@if(context.activeLink === ''){active}"
+							href="/"
+							role="button"
+							data-bs-toggle="dropdown"
+							aria-expanded="false"
+							@@if(context.activeLink === 'home'){aria-current="page"}>
+							Products
+						</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="legal-qa.html">Legal QA</a></li>
+							<li><a class="dropdown-item" href="legal-research.html">Legal Research</a></li>
+							<li><a class="dropdown-item" href="legal-document-generation.html">Legal Document Generation</a></li>
+							<li><a class="dropdown-item" href="judgement-prediction.html">Judgement Prediction and Explanation</a></li>
+							<li><a class="dropdown-item" href="contract-review.html">Contract Review</a></li>
+						</ul>
+						
 					</li>
-
 					
 					<li class="nav-item">
 						<a class="nav-link @@if(context.activeLink === 'use-cases'){active}" href="use-cases.html">Use cases</a>

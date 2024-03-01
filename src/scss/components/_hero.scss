@@ -2,6 +2,10 @@
 	position: relative;
 	z-index: 1;
 
+	.text-lg{
+		font-size: 20px;
+	}
+
 	&.style-1 {
 		.image-with-shape {
 			position: relative;

@@ -1,37 +1,107 @@
 .features-section {
-
-    .blurry-shape {
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 1000px;
-        z-index: -1;
-    }
+  .blurry-shape {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1000px;
+    z-index: -1;
+  }
 }
 
 .list-check {
-    li {
-        display: flex;
-        gap: 1rem;
+  li {
+    display: flex;
+    gap: 1rem;
 
-        .icon {
-            width: 1.25rem;
-            height: 1.25rem;
-            margin-top: 2px;
-        }
-
-        &+li {
-            margin-top: .5rem;
-        }
+    .icon {
+      width: 1.25rem;
+      height: 1.25rem;
+      margin-top: 2px;
     }
+
+    & + li {
+      margin-top: 0.5rem;
+    }
+  }
 }
 
 .hover-border {
-    border: 1px solid transparent;
-    transition: $transition-base;
+  border: 1px solid transparent;
+  transition: $transition-base;
 
-    &:hover {
-        border-color: $primary;
-    }
+  &:hover {
+    border-color: $primary;
+  }
+}
+
+.tag {
+  font-style: italic;
+  font-weight: 800;
+  font-size: x-large;
+}
+
+// .red-text {
+//   // background-color: red;
+//   color: red;
+// }
+
+// .green-text {
+//   color: rgb(57, 171, 57);
+// }
+
+.vertical-navbar {
+  position: fixed;
+  bottom: 20px;
+//   right: 20%;
+  background-color: transparent;
+  border-radius: 10%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1.5;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vertical-navbar.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.vertical-navbar .navbar-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 10px;
+}
+
+.vertical-navbar .nav-item {
+  list-style: none;
+}
+
+.vertical-navbar .nav-link {
+  text-decoration: none;
+  color: #6b6b6b;
+}
+
+.vertical-navbar .nav-link:hover {
+  color: #007bff;
+//   background-color: aliceblue;
+}
+
+.nav-wrapper {
+    width: max-content;
+    background-color: rgba(0, 0, 0, 0.511);
+    border-radius: 9999px;
+    padding: 0% 25px;
+}
+
+#underline {
+  position: absolute;
+  bottom: 0;
+  height: 2px; /* Adjust as needed */
+  background-color: #007bff; /* Adjust to your desired color */
+  transition: width 0.3s ease, left 0.3s ease; /* Smooth transition effect */
 }

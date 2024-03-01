@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+	@@include('./_components/head.html')
+	<body>
+		<div class="wrapper d-flex flex-column justify-between">
+			<!-- Navbar -->
+			@@include('./_components/navbar.html', { 
+				"dark" : true, 
+				"activeLink": "use-cases-details",
+				"extraClassList": "bg-dark"
+			})
+
+			<main class="flex-grow-1">
+				<!-- Page header -->
+				@@include('./_components/page-header.html', {
+					"dark": true,
+					"pageName": "Legal QA", 
+					"pageLinkName": "Legal QA"
+				})
+
+				<!-- Use case details -->
+				<section class="pb-10 pb-lg-15">
+					<div class="container">
+						<hr class="border-top border-dark-blue opacity-100 mb-18" />
+						<div class="row justify-center">
+							<div class="col-lg-8">
+								<article>
+									<h1>How to use AI blog post generator to speed up your writing process.</h1>
+									<p>
+										The inability to write. Everyone has been there. Even the most seasoned and
+										well-versed writers and content producers endure mental gaps. Nulla Lorem mollit
+										cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate
+										exercitation incididunt aliquip deserunt reprehenderit elit laborum.
+									</p>
+									<p>
+										Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse
+										pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure
+										tempor cupidatat incididunt.
+									</p>
+									<h4><span class="text-primary-dark">Step 1:</span> Write Higher Converting Posts</h4>
+									<p>
+										Everyone has been there. Even the most seasoned and well-versed writers and
+										content producers endure mental gaps. Nulla Lorem mollit cupidatat irure.
+										Laborum magna nulla duis ullamco cillum dolor. Voluptate anyone exercitation
+										incididunt aliquip deserunt reprehenderit elit laborum.
+									</p>
+									<p>
+										Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse
+										pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure
+										tempor cupidatat incididunt.
+									</p>
+									<img src="assets/images/screens/screen-1.jpg" alt="" class="img-fluid rounded" />
+									<h4>
+										<span class="text-primary-dark">Step 2:</span> Start creating powerful content, for
+										blog post
+									</h4>
+									<p>
+										Everyone has been there. Even the most seasoned and well-versed writers and
+										content producers endure mental gaps. Nulla Lorem mollit cupidatat irure.
+										Laborum magna nulla duis ullamco cillum dolor. Voluptate anyone exercitation
+										incididunt aliquip deserunt reprehenderit elit laborum.
+									</p>
+									<img src="assets/images/screens/screen-1.jpg" alt="" class="img-fluid rounded" />
+									<h4>
+										<span class="text-primary-dark">Step 2:</span> Start creating powerful content, for
+										blog post
+									</h4>
+									<p>
+										Everyone has been there. Even the most seasoned and well-versed writers and
+										content producers endure mental gaps. Nulla Lorem mollit cupidatat irure.
+										Laborum magna nulla duis ullamco cillum dolor. Voluptate anyone exercitation
+										incididunt aliquip deserunt reprehenderit elit laborum.
+									</p>
+									<p>
+										Fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis
+										deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor
+										cupidatat incididunt.
+									</p>
+									<img src="assets/images/screens/screen-1.jpg" alt="" class="img-fluid rounded" />
+									<p>
+										GenAI has been there. Even the most seasoned and well-versed writers and content
+										producers endure mental gaps. Nulla Lorem mollit cupidatat irure. Laborum magna.
+									</p>
+								</article>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- FAQ -->
+				@@include('./_components/faq.html', { 
+					"dark": true,
+					"extraClassList": "py-10 py-lg-15" 
+				})
+
+				<!-- CTA -->
+				@@include('./_components/cta-1.html', { "dark": true })
+			</main>
+
+			<!-- Footer -->
+			@@include('./_components/footer-1.html', {
+				"dark": true,
+				"extraClassList": "bg-striped pt-10 pt-lg-15"
+			})
+		</div>
+
+		@@include('./_components/body-end.html')
+	</body>
+</html>
