@@ -275,6 +275,17 @@ h3, .h3 {
 h4, .h4 {
   font-size: calc(1.275rem + 0.3vw);
 }
+
+.text-primary-dark-resize
+{
+  font-size: 200%;
+}
+
+.content-resize
+{
+  font-size: 210%;
+}
+
 @media (min-width: 1200px) {
   h4, .h4 {
     font-size: 1.5rem;
@@ -297,6 +308,8 @@ p {
 abbr[title] {
   -webkit-text-decoration: underline dotted;
           text-decoration: underline dotted;
+          /* -webkit-text-decoration: none;
+          text-decoration: none; */
   cursor: help;
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
@@ -311,6 +324,10 @@ address {
 ol,
 ul {
   padding-left: 2rem;
+}
+
+ul {
+  color: rgb(255, 87, 87);
 }
 
 ol,
@@ -15479,6 +15496,7 @@ textarea.form-control-lg {
 .text-primary {
   --gen-text-opacity: 1;
   color: rgba(var(--gen-primary-rgb), var(--gen-text-opacity)) !important;
+  font-size: 200%;
 }
 
 .text-secondary {

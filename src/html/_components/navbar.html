@@ -5,7 +5,7 @@
 			<img src="assets/images/@@if(context.dark){logo.svg}@@if(!context.dark){logo-blue.svg}" alt="" width="165" />
 		</a> -->
 		<div class="navbar-brand">
-			<a class="" href="/">TechPeek</a>
+			<a class="" id="remove-td-techpeek" href="/">TechPeek</a>
 		</div>
 		<!-- Navbar toggler button -->
 		<button
@@ -82,9 +82,9 @@
 					<li class="nav-item">
 						<a class="nav-link @@if(context.activeLink === 'about'){active}" href="about.html">About</a>
 					</li>
-					<li class="nav-item">
+					<!-- <li class="nav-item">
 						<a class="nav-link @@if(context.activeLink === 'blog'){active}" href="blog.html">Blog</a>
-					</li>
+					</li> -->
 					<li class="nav-item dropdown">
 						<a
 							class="nav-link @@if(context.activeLink === ''){active}"
@@ -105,9 +105,9 @@
 						
 					</li>
 					
-					<li class="nav-item">
+					<!-- <li class="nav-item">
 						<a class="nav-link @@if(context.activeLink === 'use-cases'){active}" href="use-cases.html">Use cases</a>
-					</li>
+					</li> -->
 					<li class="nav-item">
 						<a class="nav-link @@if(context.activeLink === 'pricing-plan'){active}" href="pricing-plan.html">Pricing</a>
 					</li>
