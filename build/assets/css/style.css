@@ -275,17 +275,6 @@ h3, .h3 {
 h4, .h4 {
   font-size: calc(1.275rem + 0.3vw);
 }
-
-.text-primary-dark-resize
-{
-  font-size: 200%;
-}
-
-.content-resize
-{
-  font-size: 210%;
-}
-
 @media (min-width: 1200px) {
   h4, .h4 {
     font-size: 1.5rem;
@@ -308,8 +297,6 @@ p {
 abbr[title] {
   -webkit-text-decoration: underline dotted;
           text-decoration: underline dotted;
-          /* -webkit-text-decoration: none;
-          text-decoration: none; */
   cursor: help;
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
@@ -324,10 +311,6 @@ address {
 ol,
 ul {
   padding-left: 2rem;
-}
-
-ul {
-  color: rgb(255, 87, 87);
 }
 
 ol,
@@ -3951,8 +3934,7 @@ progress {
 .form-control::file-selector-button {
   padding: 0.75rem 1.5rem;
   margin: -0.75rem -1.5rem;
-  -webkit-margin-end: 1.5rem;
-          margin-inline-end: 1.5rem;
+  margin-inline-end: 1.5rem;
   color: var(--gen-emphasis-color);
   background-color: var(--gen-tertiary-bg);
   pointer-events: none;
@@ -4000,8 +3982,7 @@ progress {
 .form-control-sm::file-selector-button {
   padding: 0.5rem 1.25rem;
   margin: -0.5rem -1.25rem;
-  -webkit-margin-end: 1.25rem;
-          margin-inline-end: 1.25rem;
+  margin-inline-end: 1.25rem;
 }
 
 .form-control-lg {
@@ -4013,8 +3994,7 @@ progress {
 .form-control-lg::file-selector-button {
   padding: 1rem 2rem;
   margin: -1rem -2rem;
-  -webkit-margin-end: 2rem;
-          margin-inline-end: 2rem;
+  margin-inline-end: 2rem;
 }
 
 textarea.form-control {
@@ -15496,7 +15476,6 @@ textarea.form-control-lg {
 .text-primary {
   --gen-text-opacity: 1;
   color: rgba(var(--gen-primary-rgb), var(--gen-text-opacity)) !important;
-  font-size: 200%;
 }
 
 .text-secondary {
@@ -35197,17 +35176,14 @@ a {
   align-items: center;
   white-space: nowrap;
   text-align: center;
-  -webkit-border-before: 0 #bdbfd4;
-          border-block-start: 0 #bdbfd4;
+  border-block-start: 0 #bdbfd4;
 }
 .divider-with-text::before, .divider-with-text::after {
   position: relative;
   width: 50%;
-  -webkit-border-before: 1px solid transparent;
-          border-block-start: 1px solid transparent;
+  border-block-start: 1px solid transparent;
   border-block-start-color: inherit;
-  -webkit-border-after: 0;
-          border-block-end: 0;
+  border-block-end: 0;
   transform: translateY(50%);
   content: "";
 }
@@ -36031,7 +36007,6 @@ article img {
   border-color: #FF5757;
 }
 [data-bs-theme=dark] .divider-with-text {
-  -webkit-border-before: 0 #2e2f45;
-          border-block-start: 0 #2e2f45;
+  border-block-start: 0 #2e2f45;
 }
 /*# sourceMappingURL=style.css.map */

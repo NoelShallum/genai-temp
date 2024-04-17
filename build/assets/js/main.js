@@ -358,4 +358,4 @@ function setActiveNavItem() {
 // Call the setActiveNavItem function when the page is scrolled
 window.addEventListener('scroll', setActiveNavItem);
 
-})();
+})()
